@@ -414,24 +414,9 @@ async function fetchBTCPrice() {
   }
 }
 
-// === CALENDLY POPUP ===
-function openAboutPopup() {
-  document.getElementById('aboutPopupOverlay').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeAboutPopup() {
-  document.getElementById('aboutPopupOverlay').classList.remove('active');
-  document.body.style.overflow = '';
-}
-
-function openCalendly() {
-  if (typeof Calendly !== 'undefined') {
-    Calendly.initPopupWidget({url: 'https://calendly.com/griffithsben-pm/30min'});
-  } else {
-    window.open('https://calendly.com/griffithsben-pm/30min', '_blank');
-  }
-}
-function closeCalendly() { /* handled natively by Calendly widget */ }
+function openAboutPopup(){}
+function closeAboutPopup(){}
+function openCalendly(){}
 
 
 
